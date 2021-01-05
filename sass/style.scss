@@ -124,3 +124,28 @@ body{
 }
 
 //Fin Price
+
+//Elagage
+
+.containerPruning{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    .titlePruning{
+        display: flex;
+        h3{
+            margin-right: 1rem;
+        }
+        button{
+            margin-top: 0.5rem;
+            border: none;
+            background-color: white;
+            font-size: xx-large;
+            outline: none;
+        }
+        .titleReductionSize{
+            display: flex;
+        }
+    }
+}
+
+//Fin elagage

@@ -103,4 +103,25 @@ body {
   font-size: x-large;
 }
 
+.containerPruning {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.containerPruning .titlePruning {
+  display: flex;
+}
+.containerPruning .titlePruning h3 {
+  margin-right: 1rem;
+}
+.containerPruning .titlePruning button {
+  margin-top: 0.5rem;
+  border: none;
+  background-color: white;
+  font-size: xx-large;
+  outline: none;
+}
+.containerPruning .titlePruning .titleReductionSize {
+  display: flex;
+}
+
 /*# sourceMappingURL=globals.css.map */
