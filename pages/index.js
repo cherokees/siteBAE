@@ -6,6 +6,7 @@ import CarouselAvis from '../components/avis'
 import Devis from '../components/devis'
 import Price from '../components/price'
 import Elagage from '../components/elagage'
+import Slider from '../components/slider'
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <Devis />
         <Price />
         <Elagage />
+        {/* <Slider items={[1, 2, 3]} displaySlides="2" /> */}
       </Layout>
     </>
   )

@@ -41,8 +41,8 @@ const treePruning = {
 
 export default function Price() {
 
-    const [pruneHeight, setPruneHeight] = useState("");
-    const [pruneFinition, setPruneFinition] = useState("");
+    const [pruneHeight, setPruneHeight] = useState(5);
+    const [pruneFinition, setPruneFinition] = useState("type1");
 
     function handleChangePruneHeight(e) {
         e.preventDefault();
@@ -56,6 +56,7 @@ export default function Price() {
 
     return (
         <>
+            {/* <div className={"containerPriceSelect " + (propTruc ? " autreClasse" : "")}> */}
             <div className="containerPriceSelect">
                 <div className="selectOption">
                     <label>Veuillez sélectionner une hauteur</label>
@@ -77,7 +78,7 @@ export default function Price() {
                 </div>
             </div>
             <div className="containerPriceView">
-                {/* {treePruning[pruneHeight][pruneFinition]} */}
+                {treePruning[pruneHeight][pruneFinition]}
             </div>
         </>
     )
