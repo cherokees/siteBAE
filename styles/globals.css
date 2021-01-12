@@ -16,6 +16,7 @@ body {
   height: 7vh;
   width: 100%;
   z-index: 2;
+  box-shadow: 0px 2px 15px 0px #656565;
 }
 .layoutNav .containerBurgerMenu .infoHeader p {
   margin: 2.5rem;
@@ -30,6 +31,7 @@ body {
   text-align: center;
   overflow: auto;
   position: relative;
+  top: 5%;
 }
 
 .bm-item {
@@ -114,7 +116,7 @@ body {
 }
 
 .containerDevis {
-  margin: 5rem;
+  padding: 5rem;
 }
 .containerDevis .catchphrase {
   font-size: xx-large;
@@ -129,6 +131,9 @@ body {
 }
 .containerDevis .ItemDevis p {
   font-size: large;
+}
+.containerDevis img {
+  width: 10rem;
 }
 
 .containerInformation {

@@ -19,6 +19,7 @@ body{
             height: 7vh;
             width: 100%;
             z-index: 2;
+            box-shadow: 0px 2px 15px 0px #656565;
             p{
                 margin: 2.5rem;
             }
@@ -35,6 +36,7 @@ body{
     text-align: center;
     overflow: auto;
     position: relative;
+    top: 5%;
   }
   
   .bm-item {
@@ -103,6 +105,7 @@ body{
 
 .containerPresentation{
     padding: 2rem;
+    // margin-top: 20rem;
     margin: 5rem;
     background-image: url("../public/photo/beige-tiles.png");
     border-radius: 15px;
@@ -130,7 +133,8 @@ body{
 //Devis
 
 .containerDevis{
-    margin: 5rem;
+    padding: 5rem;
+    // background-image: url("/photo/leaves.png");
     .catchphrase{
         font-size: xx-large;
     }
@@ -144,6 +148,9 @@ body{
         p{
             font-size: large;
         }
+    }
+    img{
+        width: 10rem;
     }
 }
 .containerInformation{
