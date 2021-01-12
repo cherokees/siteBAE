@@ -74,7 +74,9 @@ export default function Slider({ items, displaySlides = 1 }) {
                     {items.map((post, index) => {
                         return (
                             <div key={index} style={{ width: `${100 / displaySlides}%` }}>
-                                <p key={index}>{index}</p>
+                                <div className="photo-panel" >
+                                    {post}
+                                </div>
                             </div>
                         );
                     })}

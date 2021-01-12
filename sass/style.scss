@@ -22,11 +22,15 @@ body{
 //Presentation
 
 .containerPresentation{
-    margin-top: 2rem;
+    padding: 2rem;
+    margin: 5rem;
+    background-image: url("../public/photo/beige-tiles.png");
+    border-radius: 15px;
 
     .checkList{
+        height: 5rem;
         display: flex;
-        margin-left: 15%;
+        // margin-left: 15%;
         .checkListIcon{
             font-size: 2.3rem;
             margin-top: 1.5rem;
@@ -35,7 +39,8 @@ body{
         p{
             margin-left: 1rem;
             font-family: 'Redressed', cursive;
-            font-size: 1.7rem;
+            font-size: xx-large;
+            color: rgb(8, 8, 8);
         }
     }
 }
@@ -116,6 +121,7 @@ body{
     display: flex;
     flex-direction:column ;
     text-align: center;
+    margin-bottom: 2rem;
     
     p{
         font-size: x-large;
@@ -143,3 +149,44 @@ body{
 }
 
 //Fin elagage
+
+//Slider
+
+// .slide-panel-content{
+//     .photo-panel{
+//         img{
+//             width: 20rem;
+//         }
+//     }
+// }
+
+//Fin slider
+
+//Banniere1
+
+.banniereImg1{
+    background-image: url('/photo/demontage.jpeg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25rem;    
+    // background-color: blue;
+}
+
+//Fin banniere1
+
+
+//Banniere2
+
+.banniereImg2{
+    background-image: url('/photo/abattage.jpeg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25rem;    
+    // background-color: blue;
+}
+
+//Fin banniere1

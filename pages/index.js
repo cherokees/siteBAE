@@ -7,6 +7,9 @@ import Devis from '../components/devis'
 import Price from '../components/price'
 import Elagage from '../components/elagage'
 import Slider from '../components/slider'
+import Banniere1 from '../components/banniere1';
+import Banniere2 from '../components/banniere2';
+
 
 export default function Home() {
   return (
@@ -22,8 +25,14 @@ export default function Home() {
         <CarouselAvis />
         <Devis />
         <Price />
+        <Banniere1 />
         <Elagage />
-        {/* <Slider items={[1, 2, 3]} displaySlides="2" /> */}
+        <Banniere2 />
+        {/* <Slider items={[
+          <img src='/photo/abattage.jpeg' />,
+          <img src='/photo/démontage2.jpeg' />,
+          <img src='/photo/démontage3.jpg' />
+        ]} displaySlides="2" /> */}
       </Layout>
     </>
   )

@@ -16,11 +16,14 @@ body {
 }
 
 .containerPresentation {
-  margin-top: 2rem;
+  padding: 2rem;
+  margin: 5rem;
+  background-image: url("../public/photo/beige-tiles.png");
+  border-radius: 15px;
 }
 .containerPresentation .checkList {
+  height: 5rem;
   display: flex;
-  margin-left: 15%;
 }
 .containerPresentation .checkList .checkListIcon {
   font-size: 2.3rem;
@@ -30,7 +33,8 @@ body {
 .containerPresentation .checkList p {
   margin-left: 1rem;
   font-family: "Redressed", cursive;
-  font-size: 1.7rem;
+  font-size: xx-large;
+  color: #080808;
 }
 
 .containerDevis {
@@ -98,6 +102,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-bottom: 2rem;
 }
 .containerPriceView p {
   font-size: x-large;
@@ -113,6 +118,24 @@ body {
 .containerPruning .titlePruning .containerSubtitlePruning {
   border: 1px black solid;
   margin: 1rem;
+}
+
+.banniereImg1 {
+  background-image: url("/photo/demontage.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25rem;
+}
+
+.banniereImg2 {
+  background-image: url("/photo/abattage.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25rem;
 }
 
 /*# sourceMappingURL=globals.css.map */

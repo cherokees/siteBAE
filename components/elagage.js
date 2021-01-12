@@ -35,27 +35,8 @@ export default function Elagage() {
                 <h3>Les différentes tailles possibles</h3>
 
                 <p>Elles peuvent être effectuées séparément ou ensemble. Comme chaque taille répond à une attente particulière, il est difficile d'en faire une liste complète. Cependant, vous trouverez ci-dessous quelques unes d'entre elles :</p>
-                <div>
-                    <h4>Taille de réduction</h4>
-                </div>
-                <div>
-                    <h4>Taille de resserrage</h4>
-                </div>
-                <div>
-                    <h4>Taille de rehaussement</h4>
-                </div>
-                <div>
-                    <h4>Taille de mise en sécurité</h4>
-                </div>
-                <div>
-                    <h4>Taille d'éclaircie</h4>
-                </div>
-                <div>
-                    <h4>Taille de cohabitation</h4>
-                </div>
-                <div>
-                    <h4>Taille de formation ou de reformation</h4>
-                </div>
+
+                <DifferentSize></DifferentSize>
 
                 <p>EXEMPLE PHOTO A INCERER ICI</p>
             </div>
