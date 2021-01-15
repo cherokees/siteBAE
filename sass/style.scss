@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 body{
     margin: 0;
 }
@@ -11,6 +13,8 @@ body{
     .containerBurgerMenu{
         
         .infoHeader{
+            font-family: $fontTitle;
+            font-size: x-large;
             align-items: center;
             justify-content: center;
             background-color: #7DE98B;
@@ -44,8 +48,8 @@ body{
   
     /* Our sidebar item styling */
     text-decoration: none;
-    margin-bottom: 10px;
-    color: #d1d1d1;
+    margin-bottom: 1rem;
+    color: black;
     transition: color 0.2s;
   }
   
@@ -74,29 +78,29 @@ body{
   
   /* Color/shape of close button cross */
   .bm-cross {
-    background: #bdc3c7;
+    background: burlywood;
   }
   
   /* General sidebar styles */
   .bm-menu {
-    background: #000;
+    background: #D2B48C;
     padding: 2.5em 1.5em 0;
-    font-size: 1.15em;
+    font-size: x-large;
   }
   
   /* Morph shape necessary with bubble or elastic */
   .bm-morph-shape {
-    fill: #373a47;
+    fill: burlywood;
   }
   
   /* Wrapper for item list */
   .bm-item-list {
-    color: #b8b7ad;
+    color: burlywood;
   }
   
   /* Styling of overlay */
   .bm-overlay {
-    background: rgba(0, 0, 0, 0.3);
+    background: burlywood;
   }
 
 //Fin layout
@@ -105,10 +109,14 @@ body{
 
 .containerPresentation{
     padding: 2rem;
-    // margin-top: 20rem;
     margin: 5rem;
     background-image: url("../public/photo/beige-tiles.png");
     border-radius: 15px;
+    box-shadow: 0px 0px 8px 0px #656565;
+    // offset-path: path('M 0,20 L 200,20');
+    animation: move 3000ms infinite alternate ease-in-out;
+    // width: 40px;
+    // height: 40px;
 
     .checkList{
         height: 5rem;
@@ -121,7 +129,7 @@ body{
         }
         p{
             margin-left: 1rem;
-            font-family: 'Redressed', cursive;
+            font-family: $fontCatchPhrase;
             font-size: xx-large;
             color: rgb(8, 8, 8);
         }
@@ -140,21 +148,25 @@ body{
         border-radius: 15px;
         background-image: url("../public/photo/beige-tiles.png");
         font-size: xx-large;
+        font-family: $fontCatchPhrase;
         margin: auto;
         margin-bottom: 5rem;
         height: auto;
+        box-shadow: 0px 0px 8px 0px #656565;
     }
     h2{
         margin-bottom: 4rem;
         font-size: xx-large;
+        font-family: $fontTitle2;
+    }
+    h3{
+        font-family: $fontTitle2;
     }
     .ItemDevis{
         display: flex;
         .iconDevis{
             margin-top: 0.8rem;
             font-size: x-large;
-            // width: 2rem;
-            // height: 2rem;
             margin-right: 1rem;
         }
         p{
@@ -171,9 +183,10 @@ body{
     padding: 1rem;
     border-radius: 1rem;
     background-image: url("/photo/beige-tiles.png");
+    box-shadow: 0px 0px 8px 0px #656565;
     p{
-        font-size: x-large;
-        font-weight: 600;
+        font-size: xx-large;
+        font-family: $fontCatchPhrase;
         color: rgb(0, 0, 0);
     }
 }
@@ -184,15 +197,16 @@ body{
 
 .containerPrice{
     .containerColorTitlePrice{
-        background-color: #2E8B57;
+        background-color: #8FBC8F;
         padding: 3rem;
         padding-top: 1rem;
-        color: rgb(255, 255, 255);
+        color: black;
         h2{
             border: 1px solid rgb(255, 255, 255);
             border-radius: 15px;
             padding: 1rem;
             font-size: xx-large;
+            font-family: $fontTitle2;
         }
         p{
             
@@ -272,7 +286,7 @@ body{
     // margin-bottom: 8rem;
     // box-shadow: 0px 2px 15px 0px #656565;
     .containerColorBrownPriceSelect{
-    background-color:#D2B48C;
+    background-color:#8FBC8F;
         padding: 3rem;
         p{
             color: black;
@@ -331,7 +345,7 @@ body{
         }
     }
     .ContainerColorIndication{
-        background-color:#DEB887;
+        background-color:#8FBC8F;
         padding: 3rem;
         p{
             margin: 0;
@@ -365,15 +379,18 @@ body{
     margin-right: 2rem;
     h2{
         font-size: xx-large;
+        font-family: $fontTitle2;
     }
     .titlePruning{
         padding: 2rem;
         h3{
             font-size: x-large;
+            font-family: $fontTitle2;
         }
         h4{
             font-size: large;
             font-weight: 800;
+            font-family: $fontTitle2;
         }
         p{
             font-size: large;
@@ -387,26 +404,31 @@ body{
         }
         .containerButtonArticle{
             background-image: url("../public/photo/geometric-leaves.png");
-            padding: 5rem;
+            padding: 2rem;
             border: rgb(161, 161, 161) 1px solid;
             display: flex;
-            justify-content: space-around;
-            height: 25rem;
+            // justify-content: space-around;
+            height: auto;
+            
+            @media screen and (max-width: 1000px) {
+                display: flex;
+                flex-direction: column;
+            }
+
             .buttonTitleArticle{
                 display: flex;
                 flex-direction: column;
                 margin-right: 3rem;
                 button{
                     text-decoration: none;
-                    background-color: #D2B48C;
+                    background-color: transparent;
                     color: black;
-                    box-shadow: 0px 0px 6px 0px #656565;
                     border: none;
                     font-weight: 800;
                     width: 20rem;
-                    height: 2.8rem;
                     border-radius: 1rem;
                     margin: 0.4rem;
+                    text-align: left;
 
                     &:focus{
                         text-decoration: none;
@@ -414,8 +436,6 @@ body{
                     }
                 }
                 .pruningArticle{
-                    border: 1px solid black;
-                    width: 10rem;
                 }
             }
         }
@@ -431,6 +451,7 @@ body{
 //Banniere1
 
 .banniereImg1{
+    box-shadow: inset 0px 0px 12px 0px #656565;
     background-image: url('/photo/demontage.jpeg');
     background-attachment: fixed;
     background-position: center;
@@ -446,6 +467,8 @@ body{
 //Banniere2
 
 .banniereImg2{
+    box-shadow: inset 0px 0px 12px 0px #656565;
+    margin-top: 5rem;
     background-image: url('/photo/abattage.jpeg');
     background-attachment: fixed;
     background-position: center;
@@ -463,8 +486,6 @@ body{
     .carouselImage{
         img{
             max-width:100%;
-            // height: auto;
-            // object-fit: cover;
         }
     }
 }
@@ -563,3 +584,70 @@ to{transform:rotatey(1turn)}}
 /*****fin carrousel 3d automatique*****/
 
 //Fin diaporama
+
+//Abattage
+
+.containerAbattage{
+    background-color: burlywood;
+    padding: 2rem;
+    margin-bottom: 0;
+    h2{
+        font-family: $fontTitle2;
+        border: 1px solid black;
+        height: 3rem;
+        width: 30rem;
+        margin: auto;
+        margin-bottom: 3rem;
+        font-size: xx-large;
+    }
+    h3 {
+        text-align: left;
+        margin-left: 2rem;
+        font-family: $fontTitle2;
+    }
+    p{
+        padding: 1rem;
+        text-align: left;
+    }
+    .abstractPhrase{
+        text-align: center;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+
+//Fin abattage
+
+//TailleDeHaie
+
+.containerTailleDeHaie{
+    padding: 2rem;
+    background-color: burlywood;
+    margin-top: 0;
+    h2{
+        font-family: $fontTitle2;
+        border: 1px solid black;
+        height: 3rem;
+        width: 30rem;
+        margin: auto;
+        margin-bottom: 3rem;
+        font-size: xx-large;
+    }
+    h3 {
+        text-align: left;
+        margin-left: 2rem;
+        font-family: $fontTitle2;
+    }
+    p{
+        padding: 1rem;
+        text-align: left;
+    }
+    .abstractPhrase{
+        text-align: center;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    
+}
+
+//Fin taille de haie

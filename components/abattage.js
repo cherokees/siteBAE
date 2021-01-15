@@ -1,8 +1,8 @@
 export default function Abattage() {
     return (
-        <div>
+        <div className="containerAbattage">
             <h2>L'abattage</h2>
-            <p>Souvent il n'y a pas d'autre choix que d'abattre un arbre gênant ou dangereux.
+            <p className="abstractPhrase">Souvent il n'y a pas d'autre choix que d'abattre un arbre gênant ou dangereux.
             La décision doit être prise en tenant compte de l'environnement de l'arbre et de son état de santé.
             En effet, il vaut mieux dans certains cas abattre un arbre plutôt que de le tailler trop sévèrement. Car il peut, suite a une mauvaise taille s'avérer dangereux quelques années plus tard.
             Il est parfois utile d'abattre des arbres pour en favoriser d'autres.</p>

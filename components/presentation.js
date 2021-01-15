@@ -2,7 +2,7 @@ import { GiCheckMark } from 'react-icons/gi'
 
 export default function Presentation() {
     return (
-        <div className="containerPresentation">
+        <div className="containerPresentation" id="containerPresentation">
             <div className="checkList">
                 <GiCheckMark className="checkListIcon" />
                 <p>Elagueur Diplômé</p>

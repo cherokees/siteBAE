@@ -20,10 +20,12 @@ export default function Home() {
     <>
       <Layout>
         <Head>
-          <title>Create Next App</title>
+          <title>Aurélien Bernard Elagage</title>
           <link rel="icon" href="/favicon.ico" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet" />
         </Head>
         <Presentation />
         <CarouselAvis />

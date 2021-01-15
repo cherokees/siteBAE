@@ -1,8 +1,8 @@
 export default function TailleDeHaie() {
     return (
-        <div>
+        <div className="containerTailleDeHaie">
             <h2>La taille de haie</h2>
-            <p>Taille des haies de toute nature et de toute hauteur, adaptée aux types d’arbustes et à l’effet souhaité par le client.</p>
+            <p className="abstractPhrase">Taille des haies de toute nature et de toute hauteur, adaptée aux types d’arbustes et à l’effet souhaité par le client.</p>
             <h3>Taille d’entretien</h3>
             <p>Consiste à recouper la haie au niveau des anciens points de coupe de l’année précédente, c’est la plus courante et souvent la plus esthétique.</p>
             <h3>Taille de réduction</h3>

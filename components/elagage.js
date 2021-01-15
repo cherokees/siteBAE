@@ -36,8 +36,6 @@ export default function Elagage() {
                 <p>Elles peuvent être effectuées séparément ou ensemble. Comme chaque taille répond à une attente particulière, il est difficile d'en faire une liste complète. Cependant, vous trouverez ci-dessous quelques unes d'entre elles :</p>
 
                 <DifferentSize></DifferentSize>
-
-                <p>EXEMPLE PHOTO A INCERER ICI</p>
             </div>
         </div>
     )

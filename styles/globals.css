@@ -8,6 +8,8 @@ body {
   display: flex;
 }
 .layoutNav .containerBurgerMenu .infoHeader {
+  font-family: "Berkshire Swash", cursive;
+  font-size: x-large;
   align-items: center;
   justify-content: center;
   background-color: #7DE98B;
@@ -38,8 +40,8 @@ body {
   display: inline-block;
   /* Our sidebar item styling */
   text-decoration: none;
-  margin-bottom: 10px;
-  color: #d1d1d1;
+  margin-bottom: 1rem;
+  color: black;
   transition: color 0.2s;
 }
 
@@ -68,29 +70,29 @@ body {
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: #bdc3c7;
+  background: burlywood;
 }
 
 /* General sidebar styles */
 .bm-menu {
-  background: #000;
+  background: #D2B48C;
   padding: 2.5em 1.5em 0;
-  font-size: 1.15em;
+  font-size: x-large;
 }
 
 /* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
-  fill: #373a47;
+  fill: burlywood;
 }
 
 /* Wrapper for item list */
 .bm-item-list {
-  color: #b8b7ad;
+  color: burlywood;
 }
 
 /* Styling of overlay */
 .bm-overlay {
-  background: rgba(0, 0, 0, 0.3);
+  background: burlywood;
 }
 
 .containerPresentation {
@@ -98,6 +100,8 @@ body {
   margin: 5rem;
   background-image: url("../public/photo/beige-tiles.png");
   border-radius: 15px;
+  box-shadow: 0px 0px 8px 0px #656565;
+  animation: move 3000ms infinite alternate ease-in-out;
 }
 .containerPresentation .checkList {
   height: 5rem;
@@ -123,13 +127,19 @@ body {
   border-radius: 15px;
   background-image: url("../public/photo/beige-tiles.png");
   font-size: xx-large;
+  font-family: "Redressed", cursive;
   margin: auto;
   margin-bottom: 5rem;
   height: auto;
+  box-shadow: 0px 0px 8px 0px #656565;
 }
 .containerDevis h2 {
   margin-bottom: 4rem;
   font-size: xx-large;
+  font-family: "Lora", cursive;
+}
+.containerDevis h3 {
+  font-family: "Lora", cursive;
 }
 .containerDevis .ItemDevis {
   display: flex;
@@ -152,24 +162,26 @@ body {
   padding: 1rem;
   border-radius: 1rem;
   background-image: url("/photo/beige-tiles.png");
+  box-shadow: 0px 0px 8px 0px #656565;
 }
 .containerInformation p {
-  font-size: x-large;
-  font-weight: 600;
+  font-size: xx-large;
+  font-family: "Redressed", cursive;
   color: black;
 }
 
 .containerPrice .containerColorTitlePrice {
-  background-color: #2E8B57;
+  background-color: #8FBC8F;
   padding: 3rem;
   padding-top: 1rem;
-  color: white;
+  color: black;
 }
 .containerPrice .containerColorTitlePrice h2 {
   border: 1px solid white;
   border-radius: 15px;
   padding: 1rem;
   font-size: xx-large;
+  font-family: "Lora", cursive;
 }
 .containerPrice .containerColorTitlePrice p {
   font-size: x-large;
@@ -228,7 +240,7 @@ body {
 }
 
 .containerPrice .containerColorBrownPriceSelect {
-  background-color: #D2B48C;
+  background-color: #8FBC8F;
   padding: 3rem;
 }
 .containerPrice .containerColorBrownPriceSelect p {
@@ -280,7 +292,7 @@ body {
   font-size: x-large;
 }
 .containerPrice .ContainerColorIndication {
-  background-color: #DEB887;
+  background-color: #8FBC8F;
   padding: 3rem;
 }
 .containerPrice .ContainerColorIndication p {
@@ -307,16 +319,19 @@ body {
 }
 .containerPruning h2 {
   font-size: xx-large;
+  font-family: "Lora", cursive;
 }
 .containerPruning .titlePruning {
   padding: 2rem;
 }
 .containerPruning .titlePruning h3 {
   font-size: x-large;
+  font-family: "Lora", cursive;
 }
 .containerPruning .titlePruning h4 {
   font-size: large;
   font-weight: 800;
+  font-family: "Lora", cursive;
 }
 .containerPruning .titlePruning p {
   font-size: large;
@@ -330,11 +345,16 @@ body {
 }
 .containerPruning .titlePruning .containerButtonArticle {
   background-image: url("../public/photo/geometric-leaves.png");
-  padding: 5rem;
+  padding: 2rem;
   border: #a1a1a1 1px solid;
   display: flex;
-  justify-content: space-around;
-  height: 25rem;
+  height: auto;
+}
+@media screen and (max-width: 1000px) {
+  .containerPruning .titlePruning .containerButtonArticle {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .containerPruning .titlePruning .containerButtonArticle .buttonTitleArticle {
   display: flex;
@@ -343,23 +363,18 @@ body {
 }
 .containerPruning .titlePruning .containerButtonArticle .buttonTitleArticle button {
   text-decoration: none;
-  background-color: #D2B48C;
+  background-color: transparent;
   color: black;
-  box-shadow: 0px 0px 6px 0px #656565;
   border: none;
   font-weight: 800;
   width: 20rem;
-  height: 2.8rem;
   border-radius: 1rem;
   margin: 0.4rem;
+  text-align: left;
 }
 .containerPruning .titlePruning .containerButtonArticle .buttonTitleArticle button:focus {
   text-decoration: none;
   background-color: #39C64A;
-}
-.containerPruning .titlePruning .containerButtonArticle .buttonTitleArticle .pruningArticle {
-  border: 1px solid black;
-  width: 10rem;
 }
 .containerPruning .titlePruning .containerSubtitlePruning {
   border: 1px black solid;
@@ -367,6 +382,7 @@ body {
 }
 
 .banniereImg1 {
+  box-shadow: inset 0px 0px 12px 0px #656565;
   background-image: url("/photo/demontage.jpeg");
   background-attachment: fixed;
   background-position: center;
@@ -376,6 +392,8 @@ body {
 }
 
 .banniereImg2 {
+  box-shadow: inset 0px 0px 12px 0px #656565;
+  margin-top: 5rem;
   background-image: url("/photo/abattage.jpeg");
   background-attachment: fixed;
   background-position: center;
@@ -462,5 +480,62 @@ body {
   }
 }
 /*****fin carrousel 3d automatique*****/
+.containerAbattage {
+  background-color: burlywood;
+  padding: 2rem;
+  margin-bottom: 0;
+}
+.containerAbattage h2 {
+  font-family: "Lora", cursive;
+  border: 1px solid black;
+  height: 3rem;
+  width: 30rem;
+  margin: auto;
+  margin-bottom: 3rem;
+  font-size: xx-large;
+}
+.containerAbattage h3 {
+  text-align: left;
+  margin-left: 2rem;
+  font-family: "Lora", cursive;
+}
+.containerAbattage p {
+  padding: 1rem;
+  text-align: left;
+}
+.containerAbattage .abstractPhrase {
+  text-align: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.containerTailleDeHaie {
+  padding: 2rem;
+  background-color: burlywood;
+  margin-top: 0;
+}
+.containerTailleDeHaie h2 {
+  font-family: "Lora", cursive;
+  border: 1px solid black;
+  height: 3rem;
+  width: 30rem;
+  margin: auto;
+  margin-bottom: 3rem;
+  font-size: xx-large;
+}
+.containerTailleDeHaie h3 {
+  text-align: left;
+  margin-left: 2rem;
+  font-family: "Lora", cursive;
+}
+.containerTailleDeHaie p {
+  padding: 1rem;
+  text-align: left;
+}
+.containerTailleDeHaie .abstractPhrase {
+  text-align: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
 
 /*# sourceMappingURL=globals.css.map */

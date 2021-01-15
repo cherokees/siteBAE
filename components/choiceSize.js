@@ -2,7 +2,7 @@ import { Item, Items } from "./functionItems";
 
 export default function ChoiceOfSize() {
     return <Items>
-        <Item title="environmentalConstraints">
+        <Item title="LES CONTRAINTES ENVIRONNEMENTALES">
             <p>Ce sont elles qui, en général, obligent à prendre la décision de tailler un arbre :</p>
             <ul>
                 <li>proximité des voisins</li>
@@ -16,9 +16,10 @@ export default function ChoiceOfSize() {
                 <li>Est plus sensible aux parasites et aux maladies (risque de pourriture des racines pouvant occasionner la chute de l'arbre).</li>
             </ul>
         </Item>
-        <Item title="sanitaryStateTree">
+        <Item title="L'ETAT SANITAIRE DE L'ARBRE">
             <p>Son âge, sa vigueur, son aspect général, sont autant d'éléments à prendre en compte pour choisir la taille la mieux adaptée. Un diagnostic approfondi peut révéler un arbre dangereux qui nécessitera une taille de mise en sécurité voire même un abattage si son état est jugé trop menaçant.</p>
-            <h4>L'essence de l'arbre</h4>
+        </Item>
+        <Item title="L'ESSENCE DE L'ARBRE">
             <p>Il faut savoir que selon les espèces les arbres ne réagissent pas de la même manière à une même taille </p>
             <ul>
                 <li>repousse plus ou moins vigoureuse</li>
@@ -27,7 +28,7 @@ export default function ChoiceOfSize() {
             </ul>
             <p>C'est souvent 1 ou 2 ans après que l'aspect esthétique de l'arbre change, il est donc important de bien le connaître pour éviter les mauvaises surprises.</p>
         </Item>
-        <Item title="aestheticAspect">
+        <Item title="L'ASPECT ESTHETIQUE">
             <p>Il est possible d'effectuer des tailles pour mettre en valeur l'arbre ou pour l'accompagner dans son développement. Ce sont en général des tailles assez légères qui ne gênent en rien le bon développement du végétal. Elles peuvent être indispensables dans le cas de certains arbres sujets à la déchirure de branches comme le cèdre.</p>
         </Item>
     </Items>
