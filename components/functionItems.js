@@ -8,11 +8,13 @@ export function Items({ children }) {
     })
 
     return (
-        <div>
-            {childrenArray.map(child => (
-                <button onClick={() => setCurrent(child.key)} key={child.key}>{child.props.title}</button>
-            ))}
-            <div>{newChildren}</div>
+        <div className="containerButtonArticle">
+            <div className="buttonTitleArticle">
+                {childrenArray.map(child => (
+                    <button onClick={() => setCurrent(child.key)} key={child.key}>{child.props.title}</button>
+                ))}
+            </div>
+            <div className="pruningArticle">{newChildren}</div>
         </div>
     )
 }

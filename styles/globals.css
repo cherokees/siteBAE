@@ -119,6 +119,16 @@ body {
   padding: 5rem;
 }
 .containerDevis .catchphrase {
+  padding: 3rem;
+  border-radius: 15px;
+  background-image: url("../public/photo/beige-tiles.png");
+  font-size: xx-large;
+  margin: auto;
+  margin-bottom: 5rem;
+  height: auto;
+}
+.containerDevis h2 {
+  margin-bottom: 4rem;
   font-size: xx-large;
 }
 .containerDevis .ItemDevis {
@@ -126,7 +136,7 @@ body {
 }
 .containerDevis .ItemDevis .iconDevis {
   margin-top: 0.8rem;
-  font-size: 2rem;
+  font-size: x-large;
   margin-right: 1rem;
 }
 .containerDevis .ItemDevis p {
@@ -138,31 +148,61 @@ body {
 
 .containerInformation {
   margin: 5rem;
+  margin-top: 0;
   padding: 1rem;
   border-radius: 1rem;
-  background-color: #8B4513;
+  background-image: url("/photo/beige-tiles.png");
 }
 .containerInformation p {
   font-size: x-large;
   font-weight: 600;
-  color: white;
+  color: black;
 }
 
-.containerPriceSelect {
+.containerPrice .containerColorTitlePrice {
+  background-color: #2E8B57;
+  padding: 3rem;
+  padding-top: 1rem;
+  color: white;
+}
+.containerPrice .containerColorTitlePrice h2 {
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 1rem;
+  font-size: xx-large;
+}
+.containerPrice .containerColorTitlePrice p {
+  font-size: x-large;
+}
+.containerPrice .containerColorGreenPriceSelect {
+  background-color: #8FBC8F;
+  padding: 3rem;
+}
+.containerPrice .containerColorGreenPriceSelect p {
+  color: black;
+  font-size: x-large;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 1rem;
+}
+.containerPrice .containerColorGreenPriceSelect .prghPrice {
+  border: none;
+}
+.containerPrice .containerColorGreenPriceSelect .containerPriceSelect {
   display: flex;
   justify-content: center;
 }
-.containerPriceSelect .selectOption {
+.containerPrice .containerColorGreenPriceSelect .containerPriceSelect .selectOption {
   margin: 3rem;
   margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
 }
-.containerPriceSelect .selectOption label {
+.containerPrice .containerColorGreenPriceSelect .containerPriceSelect .selectOption label {
   font-size: x-large;
   margin-bottom: 1.5rem;
 }
-.containerPriceSelect .selectOption select {
+.containerPrice .containerColorGreenPriceSelect .containerPriceSelect .selectOption select {
   height: 2.5rem;
   font-size: large;
   padding-left: 0.5rem;
@@ -171,30 +211,155 @@ body {
   cursor: pointer;
   border: 1px solid #dadada;
 }
-.containerPriceSelect .selectOption select:hover, .containerPriceSelect .selectOption select:focus {
+.containerPrice .containerColorGreenPriceSelect .containerPriceSelect .selectOption select:hover, .containerPrice .containerColorGreenPriceSelect .containerPriceSelect .selectOption select:focus {
   border: 1px solid #a0a0a0;
   outline: none;
 }
-.containerPriceSelect .selectOption select option:hover, .containerPriceSelect .selectOption select option:focus {
+.containerPrice .containerColorGreenPriceSelect .containerPriceSelect .selectOption select option:hover, .containerPrice .containerColorGreenPriceSelect .containerPriceSelect .selectOption select option:focus {
   background-color: #a0a0a0;
 }
-
-.containerPriceView {
+.containerPrice .containerColorGreenPriceSelect .containerPriceView {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-bottom: 2rem;
 }
-.containerPriceView p {
+.containerPrice .containerColorGreenPriceSelect .containerPriceView p {
   font-size: x-large;
 }
 
+.containerPrice .containerColorBrownPriceSelect {
+  background-color: #D2B48C;
+  padding: 3rem;
+}
+.containerPrice .containerColorBrownPriceSelect p {
+  color: black;
+  font-size: x-large;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 1rem;
+}
+.containerPrice .containerColorBrownPriceSelect .prghPrice {
+  border: none;
+}
+.containerPrice .containerColorBrownPriceSelect .containerPriceSelect {
+  display: flex;
+  justify-content: center;
+}
+.containerPrice .containerColorBrownPriceSelect .containerPriceSelect .selectOption {
+  margin: 3rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.containerPrice .containerColorBrownPriceSelect .containerPriceSelect .selectOption label {
+  font-size: x-large;
+  margin-bottom: 1.5rem;
+}
+.containerPrice .containerColorBrownPriceSelect .containerPriceSelect .selectOption select {
+  height: 2.5rem;
+  font-size: large;
+  padding-left: 0.5rem;
+  border-radius: 0.2rem;
+  background-color: #eeeeee;
+  cursor: pointer;
+  border: 1px solid #dadada;
+}
+.containerPrice .containerColorBrownPriceSelect .containerPriceSelect .selectOption select:hover, .containerPrice .containerColorBrownPriceSelect .containerPriceSelect .selectOption select:focus {
+  border: 1px solid #a0a0a0;
+  outline: none;
+}
+.containerPrice .containerColorBrownPriceSelect .containerPriceSelect .selectOption select option:hover, .containerPrice .containerColorBrownPriceSelect .containerPriceSelect .selectOption select option:focus {
+  background-color: #a0a0a0;
+}
+.containerPrice .containerColorBrownPriceSelect .containerPriceView {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.containerPrice .containerColorBrownPriceSelect .containerPriceView p {
+  font-size: x-large;
+}
+.containerPrice .ContainerColorIndication {
+  background-color: #DEB887;
+  padding: 3rem;
+}
+.containerPrice .ContainerColorIndication p {
+  margin: 0;
+  color: black;
+  font-size: x-large;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 1rem;
+}
+.containerPrice .ContainerColorIndication ul {
+  margin-top: 2rem;
+  text-align: left;
+  font-size: large;
+}
+.containerPrice .ContainerColorIndication ul li {
+  height: 2rem;
+}
+
 .containerPruning {
+  margin-top: 3rem;
   margin-left: 2rem;
   margin-right: 2rem;
 }
+.containerPruning h2 {
+  font-size: xx-large;
+}
+.containerPruning .titlePruning {
+  padding: 2rem;
+}
 .containerPruning .titlePruning h3 {
-  margin-right: 1rem;
+  font-size: x-large;
+}
+.containerPruning .titlePruning h4 {
+  font-size: large;
+  font-weight: 800;
+}
+.containerPruning .titlePruning p {
+  font-size: large;
+}
+.containerPruning .titlePruning img {
+  width: 10rem;
+}
+.containerPruning .titlePruning ul {
+  text-align: left;
+  font-size: large;
+}
+.containerPruning .titlePruning .containerButtonArticle {
+  background-image: url("../public/photo/geometric-leaves.png");
+  padding: 5rem;
+  border: #a1a1a1 1px solid;
+  display: flex;
+  justify-content: space-around;
+  height: 25rem;
+}
+.containerPruning .titlePruning .containerButtonArticle .buttonTitleArticle {
+  display: flex;
+  flex-direction: column;
+  margin-right: 3rem;
+}
+.containerPruning .titlePruning .containerButtonArticle .buttonTitleArticle button {
+  text-decoration: none;
+  background-color: #D2B48C;
+  color: black;
+  box-shadow: 0px 0px 6px 0px #656565;
+  border: none;
+  font-weight: 800;
+  width: 20rem;
+  height: 2.8rem;
+  border-radius: 1rem;
+  margin: 0.4rem;
+}
+.containerPruning .titlePruning .containerButtonArticle .buttonTitleArticle button:focus {
+  text-decoration: none;
+  background-color: #39C64A;
+}
+.containerPruning .titlePruning .containerButtonArticle .buttonTitleArticle .pruningArticle {
+  border: 1px solid black;
+  width: 10rem;
 }
 .containerPruning .titlePruning .containerSubtitlePruning {
   border: 1px black solid;
@@ -218,5 +383,84 @@ body {
   background-size: cover;
   height: 25rem;
 }
+
+.contenuCarouselAuto .carouselImage img {
+  max-width: 100%;
+}
+
+/*****carrousel 3d automatique*****/
+* {
+  box-sizing: border-box;
+}
+
+.contenuCarouselAuto {
+  margin: 2rem auto;
+  width: 26.25rem;
+  height: 17.438rem;
+  perspective: 8000px;
+}
+
+.carouselImage {
+  animation: rotation 24s infinite alternate linear;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.carouselImage img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.carouselImage img {
+  filter: drop-shadow(0 12px 5px rgba(0, 0, 0, 0.4));
+  width: 25rem;
+  height: 16.625rem;
+  left: 0.625rem;
+  outline: 1px solid transparent;
+  backface-visibility: hidden;
+}
+
+.carouselImage img:nth-child(1) {
+  transform: translate3d(0, 0, 495px);
+}
+
+.carouselImage img:nth-child(2) {
+  transform: rotateY(45deg) translateZ(495px);
+}
+
+.carouselImage img:nth-child(3) {
+  transform: rotateY(90deg) translateZ(495px);
+}
+
+.carouselImage img:nth-child(4) {
+  transform: rotateY(135deg) translateZ(495px);
+}
+
+.carouselImage img:nth-child(5) {
+  transform: rotateY(180deg) translateZ(495px);
+}
+
+.carouselImage img:nth-child(6) {
+  transform: rotateY(225deg) translateZ(495px);
+}
+
+.carouselImage img:nth-child(7) {
+  transform: rotateY(270deg) translateZ(495px);
+}
+
+.carouselImage img:nth-child(8) {
+  transform: rotateY(315deg) translateZ(495px);
+}
+
+@keyframes rotation {
+  from {
+    transform: rotatey(0);
+  }
+  to {
+    transform: rotatey(1turn);
+  }
+}
+/*****fin carrousel 3d automatique*****/
 
 /*# sourceMappingURL=globals.css.map */

@@ -9,26 +9,26 @@ const treePruning = {
     },
     10: {
         name: "10 à 15 mètres",
-        type1: 200,
-        type2: 250,
+        type1: 150,
+        type2: 200,
         type3: 350,
     },
     15: {
         name: "15 à 20 mètres",
-        type1: 300,
-        type2: 350,
-        type3: 650,
+        type1: 250,
+        type2: 300,
+        type3: 900,
     },
     20: {
         name: "20 à 30 mètres",
         type1: 350,
-        type2: 450,
-        type3: 750,
+        type2: 600,
+        type3: 1200,
     },
 
 }
 
-export default function Price() {
+export default function Price2() {
 
     const [pruneHeight, setPruneHeight] = useState(5);
     const [pruneFinition, setPruneFinition] = useState("type1");
@@ -47,13 +47,8 @@ export default function Price() {
         <>
             {/* <div className={"containerPriceSelect " + (propTruc ? " autreClasse" : "")}> */}
             <div className="containerPrice">
-                <div className="containerColorTitlePrice">
-                    <h2>Les prix</h2>
-                    <p>Les prix sont adaptés au besoin du client, afin de maintenir un bon rapport qualité/prix.
-Contactez-moi pour un devis.</p>
-                </div>
-                <div className="containerColorGreenPriceSelect">
-                    <p>Voici les prix en euros HT pour la taille de réduction de couronne complète (hauteur et côtés) d'environ 1/3 avec conservation du port naturel de l'arbre :</p>
+                <div className="containerColorBrownPriceSelect">
+                    <p>Voici les prix en euros HT pour l'abattage de l'arbre en entier ou par démontage (découpe en morceaux, utilisation de cordes et de matériel spécifique) :</p>
                     <div className="containerPriceSelect">
                         <div className="selectOption">
                             <label>Veuillez sélectionner une hauteur</label>
@@ -77,6 +72,15 @@ Contactez-moi pour un devis.</p>
                     <div className="containerPriceView">
                         <p className="prghPrice">PRIX : {treePruning[pruneHeight][pruneFinition]} €</p>
                     </div>
+                </div>
+                <div className="ContainerColorIndication">
+                    <p>Ces prix d'élagage et d'abattage sont donnés hors TVA, ils sont donnés à titre indicatif et peuvent varier à la hausse comme à la baisse en fonction :</p>
+                    <ul>
+                        <li>du besoin exprimé par le client (conservation d'une partie du bois, fente du gros bois...)</li>
+                        <li>des critères extérieurs, l'emplacement de l'abre, éloignement du chantier...</li>
+                        <li>de l'essence de l'arbre (plus ou moins de bois et branches)</li>
+                        <li>de la difficulté du travail (arbre mort, déraciné, dans l'eau)</li>
+                    </ul>
                 </div>
             </div>
         </>

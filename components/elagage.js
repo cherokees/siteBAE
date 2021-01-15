@@ -10,14 +10,13 @@ export default function Elagage() {
 
             <div className="titlePruning">
                 <h3>Les périodes de tailles</h3>
-
-
+                <img src="/photo/tree.jpg" alt="Arbre" />
                 <p>Il est possible d'effectuer des tailles légères toute l'année, même en été car l'arbre cicatrise plus vite lorsqu'il est en activité végétale. Pour les tailles plus importantes, il est préférable d'attendre l'hiver car l'arbre sera en repos végétatif.</p>
             </div>
 
             <div className="titlePruning">
                 <h3>La durée d'une taille</h3>
-
+                <img src="/photo/time.jpg" alt="Horloge" />
                 <p>Le type d'arbre et la taille effectuée influence la durée qui est en moyenne de cinq ans.
             Contrairement aux idées reçues, retirer beaucoup de bois ne veut pas forcément dire être tranquille plus longtemps.</p>
             </div>
